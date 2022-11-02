@@ -21,6 +21,10 @@ cantidad_numeros_positivos = 0
 # numero_2
 # numero_3
 
+numero_1 = int(input('Ingrese el primer número entero:\n'))
+numero_2 = int(input('Ingrese el segundo número entero:\n'))
+numero_3 = int(input('Ingrese el tercer número entero:\n'))
+
 # Deberá realizar un tres condicionales separados,
 # en cada condicional deberá averiguar si cada número
 # es mayor a cero.
@@ -28,8 +32,16 @@ cantidad_numeros_positivos = 0
 # Por cada número mayor a cero (cada condicional que se cumpla)
 # deberá incrementar en 1 (+= 1) la "variable cantidad_numeros_positivos"
 
+if numero_1 > 0:
+    cantidad_numeros_positivos += 1
+
+if numero_2 > 0:
+    cantidad_numeros_positivos += 1
+
+if numero_3 > 0:
+    cantidad_numeros_positivos += 1
 
 # Al finalizar, imprimir en pantalla la variable cantidad_numeros_positivos
-
+print('La cantidad de número enteros ingresados es:', cantidad_numeros_positivos)
 
 

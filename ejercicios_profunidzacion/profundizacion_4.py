@@ -14,7 +14,7 @@
 
 # Ejercicios de práctica con números
 '''
-Objetizo:
+Objetivo:
 Realizar un programa que solicite ingresar
 tres valores decimales de temperatura
 De las temperaturas ingresadas se determinará:
@@ -49,3 +49,40 @@ y almacenar el resultado en una variable llamada
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+temperatura_1 = float(input('Ingrese Valor de temperatura 1:'))
+temperatura_2 = float(input('Ingrese Valor de temperatura 2:'))
+temperatura_3 = float(input('Ingrese Valor de temperatura 3:'))
+
+if(temperatura_1 > temperatura_2 and temperatura_2 > temperatura_3):
+  temp_max = temperatura_1
+  temp_med = temperatura_2
+  temp_min = temperatura_3
+if(temperatura_1 > temperatura_3 and temperatura_3 > temperatura_2):
+  temp_max = temperatura_1
+  temp_med = temperatura_3
+  temp_min = temperatura_2
+if(temperatura_2 > temperatura_1 and temperatura_1 > temperatura_3):
+  temp_max = temperatura_2
+  temp_med = temperatura_1
+  temp_min = temperatura_3
+if(temperatura_2 > temperatura_3 and temperatura_3 > temperatura_1):
+  temp_max = temperatura_2
+  temp_med = temperatura_3
+  temp_min = temperatura_1
+if(temperatura_3 > temperatura_1 and temperatura_1 > temperatura_2):
+  temp_max = temperatura_3
+  temp_med = temperatura_1
+  temp_min = temperatura_2
+if(temperatura_3 > temperatura_2 and temperatura_2 > temperatura_1):
+  temp_max = temperatura_3
+  temp_med = temperatura_2
+  temp_min = temperatura_1
+
+temperatura_total = temperatura_1 + temperatura_2 + temperatura_3
+
+temperatura_promedio = temperatura_total / 3
+
+print(f'La temperatura máxima es {temp_max}, la media es {temp_med} y la mínima es {temp_min}')
+
+print('La temperatura promedio ingresada es:', temperatura_promedio)
